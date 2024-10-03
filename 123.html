@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trung Hiếu đây</title>
+        <meta charset="utf-8">
+        <style>
+            /* Thiết lập toàn bộ trang với màu nền và phông chữ */
+            body {
+                background-color: #2c2c2c; /* Xám đậm */
+                color: #f4f4f4; /* Màu trắng nhạt */
+                font-family: 'Georgia', serif; /* Phông chữ serif sang trọng */
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+
+            h1 {
+                text-align: center;
+                color: #d4af37; /* Màu vàng đồng */
+                padding: 20px;
+                border-bottom: 2px solid #d4af37; /* Đường viền vàng đồng */
+                font-size: 2.5em;
+            }
+
+            p {
+                padding: 0 15px;
+                margin: 20px auto;
+                max-width: 800px;
+                text-align: justify;
+                font-size: 1.1em;
+                color: #f4f4f4; /* Màu trắng cho nội dung chính */
+            }
+
+            a {
+                color: #d4af37; /* Màu vàng đồng */
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+            a:hover {
+                color: #f4f4f4; /* Màu trắng khi hover */
+                transition: color 0.3s ease;
+            }
+
+            /* Chỉnh sửa ảnh phần introduction */
+            .intro-images {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                justify-content: center;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+
+            .intro-images img {
+                width: 100%; /* Để ảnh tự điều chỉnh kích thước */
+                border: 3px solid #d4af37; /* Viền vàng đồng */
+                border-radius: 10px; /* Bo góc nhẹ */
+                box-shadow: 0 4px 8px rgba(212, 175, 55, 0.5); /* Bóng đổ nhẹ */
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .intro-images img:hover {
+                transform: scale(1.05); /* Phóng to nhẹ khi hover */
+                box-shadow: 0 8px 16px rgba(212, 175, 55, 0.7); /* Bóng đổ sâu hơn khi hover */
+            }
+
+            /* Instagram link button */
+            .instagram-link {
+                display: inline-block;
+                margin: 20px 0;
+                background-color: #d4af37;
+                color: #2c2c2c;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-align: center;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+                text-transform: uppercase;
+            }
+
+            .instagram-link:hover {
+                background-color: #f4f4f4;
+                color: #2c2c2c;
+            }
+
+            /* Thiết kế danh sách unordered */
+            ul {
+                list-style-type: none;
+                padding: 0;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            ul li {
+                background-color: #333; /* Màu xám đậm */
+                margin: 10px 0;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(212, 175, 55, 0.3); /* Bóng đổ vàng đồng */
+                font-size: 1.2em;
+            }
+
+            /* Đặt hình ảnh nằm cạnh nhau */
+            .image-row {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+
+            .image-row img {
+                width: 100%; /* Để hình ảnh tự điều chỉnh kích thước */
+                border: 2px solid #d4af37;
+                border-radius: 5px;
+                box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3); /* Bóng đổ vàng đồng */
+                transition: transform 0.3s ease;
+            }
+
+            .image-row img:hover {
+                transform: scale(1.1); /* Phóng to khi hover */
+            }
+
+            /* Căn chỉnh danh sách và nội dung */
+            ul li strong {
+                font-size: 1.3em;
+                color: #d4af37; /* Màu vàng đồng */
+            }
+
+            /* Tạo không gian cho các đoạn văn */
+            ul li p {
+                margin: 10px 0;
+                color: #f4f4f4;
+            }
+
+        </style>
+    </head>
+
+    <body> 
+        <h1>Tran Hoang Trung Hieu</h1>
+        
+        <!-- Introduction paragraph -->
+        <p>Hello everyone, my name is Tran Hoang Trung Hieu, currently studying at FPT University, majoring in software engineering.
+            I quite like reading books, listening to music, and love going out and exploring the world around me.
+            I am a sociable person. It can be said that I am quite humorous, but I am also trustworthy,
+            always fair and willing to forgive mistakes if they do not exceed my limit. I think I have this personality because I am a Libra (October).</p>
+        
+        <!-- Images of Trung Hiếu -->
+        <div class="intro-images">
+            <img src="ảnh/anh1.jpg" alt="Trần Hoàng Trung Hiếu" />
+            <img src="ảnh/a6.jpg" alt="Trung Hiếu 2" />
+            
+            <img src="ảnh/a7 copy.jpg" alt="Trung Hiếu 3" /> 
+        </div>
+
+        <!-- Instagram link -->
+        <div class="instagram-link">
+            <a href="https://www.instagram.com/t.hng_trhieu/">Link to my Instagram</a>
+        </div>
+
+        <!-- Unordered list -->
+        <ul>
+            <li><strong>Trips</strong>
+                <p>As mentioned above, I really like to explore the world. I enjoy visiting places that are ancient or not too noisy. 
+                    I don’t necessarily need company because I quite like being alone, 
+                    but it’s always nice to have someone join me.</p>
+                
+                <!-- Hình ảnh kế bên nhau -->
+                <div class="image-row">
+                    <img src="ảnh/anh2.jpg" alt="Trip image 1" />
+                    <img src="ảnh/anh3.jpg" alt="Trip image 2" />
+                    <img src="ảnh/anh4.jpg" alt="Trip image 3" />
+                    <img src="ảnh/a5.jpg" alt="Trip image 4" />
+                </div>
+            </li>
+
+            <li><strong>Skills</strong>
+                <p>Call my skill a chair because it's not a table, it's too classy.
+                     My strength is that I have no weaknesses..</p>
+            </li>
+            <div class="image-row">
+                <img src="ảnh/3.jpg" alt="image 1" />
+                <img src="ảnh/2.jpg" alt="image 2" />
+                <img src="ảnh/4.jpg" alt=" image 3" />
+                <img src="ảnh/1.jpg" alt="image 4" />
+            </div>
+        </li>
+            <li><strong>memories</strong>
+                <p>Some of the most memorable memories.</p>
+                <div class="image-row">
+                    <img src="ảnh/11.jpg" alt="image 1" />
+                    <img src="ảnh/22.jpg" alt="image 2" />
+                    <img src="ảnh/44.jpg" alt=" image 3" />
+                    <img src="ảnh/33.jpg" alt="image 4" />
+                </div>
+            </li>
+        </ul>
+    </body>
+    
+</html>
